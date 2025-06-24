@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import SolutionsPreview from './components/SolutionsPreview';
 import Education from './components/Education';
 import Trust from './components/Trust';
 import Footer from './components/Footer';
@@ -9,6 +8,7 @@ import Solutions from './components/Solutions';
 import About from './components/About';
 import Contact from './components/Contact';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import SolutionsPreview from './components/SolutionsPreview';
 
 function App() {
   return (
