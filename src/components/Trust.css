@@ -1,0 +1,26 @@
+.trust {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.trust h2 {
+  margin-bottom: 2rem;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.logo-item {
+  font-size: 1.5rem;
+  color: #ccc;
+  border: 2px dashed #ccc;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+} 

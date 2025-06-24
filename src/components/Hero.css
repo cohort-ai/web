@@ -1,0 +1,56 @@
+.hero {
+  position: relative;
+  text-align: center;
+  padding: 6rem 2rem;
+  background: url('https://images.unsplash.com/photo-1620712943543-2858200f7426?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+  color: white;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.cta-buttons .primary-cta {
+  background-color: #1A73E8;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.cta-buttons .secondary-cta {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+} 
