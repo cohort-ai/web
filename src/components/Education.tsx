@@ -5,7 +5,7 @@ const Education: React.FC = () => {
   return (
     <section className="education">
       <h1>Education</h1>
-      <p>Explore our educational resources.</p>
+      <p>Coming soon...</p>
     </section>
   );
 };

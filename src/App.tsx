@@ -20,9 +20,9 @@ function App() {
             <Route path="/" element={
               <>
                 <Hero />
-                <SolutionsPreview />
+                {/* <SolutionsPreview />
                 <Education />
-                <Trust />
+                <Trust /> */}
               </>
             } />
             <Route path="/solutions" element={<Solutions />} />

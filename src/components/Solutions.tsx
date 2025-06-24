@@ -4,7 +4,7 @@ const Solutions: React.FC = () => {
   return (
     <section className="solutions">
       <h1>Solutions</h1>
-      <p>Learn more about our solutions here.</p>
+      <p>Coming soon...</p>
     </section>
   );
 };
