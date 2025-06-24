@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Contact.css';
-// @ts-expect-error: Suppress type error if emailjs-com types are missing
 import emailjs from 'emailjs-com';
 
 // Please fill in your EmailJS service ID, template ID, and public key below:
