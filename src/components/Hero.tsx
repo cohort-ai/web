@@ -8,8 +8,8 @@ const Hero: React.FC = () => {
         <h1>Empowering SMEs Across Asia with AI-Driven Growth</h1>
         <p>We democratize AI to help SMEs unlock growth.</p>
         <div className="cta-buttons">
-          <button className="primary-cta" onClick={() => window.location.href = '/contact'}>Get Started with AI</button>
-          <button className="secondary-cta" onClick={() => window.location.href = '/solutions'}>Explore Our Solutions</button>
+          <a className="primary-cta" href="/contact">Get Started with AI</a>
+          <a className="secondary-cta" href="/solutions">Explore Our Solutions</a>
         </div>
       </div>
     </section>
