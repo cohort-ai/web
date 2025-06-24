@@ -1,0 +1,28 @@
+.solutions-preview {
+  padding: 4rem 2rem;
+  background-color: #f8f9fa;
+  text-align: center;
+  color: #333;
+}
+
+.solutions-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.solution-item {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  width: 200px;
+}
+
+.solution-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: #00BFA6;
+} 
