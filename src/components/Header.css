@@ -5,6 +5,24 @@
   padding: 1rem 2rem;
   background-color: #23242a;
   border-bottom: 1px solid #495057;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  backdrop-filter: blur(10px);
+  background-color: rgba(35, 36, 42, 0.95);
+}
+
+.header.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+  opacity: 0;
 }
 
 .logo img {
@@ -53,7 +71,8 @@
     position: absolute;
     top: 100%;
     right: 0;
-    background: #23242a;
+    background: rgba(35, 36, 42, 0.95);
+    backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: flex-end;
     width: 200px;

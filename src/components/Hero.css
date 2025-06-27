@@ -53,4 +53,18 @@
   font-size: 1rem;
   border-radius: 8px;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+  
+  .hero h1 {
+    font-size: 2rem;
+  }
+  
+  .hero p {
+    font-size: 1rem;
+  }
 } 
