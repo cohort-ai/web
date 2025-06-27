@@ -11,12 +11,15 @@ import ServicesProducts from "./components/ServicesProducts";
 import CaseStudies from "./components/CaseStudies";
 import CallToAction from "./components/CallToAction";
 import AIRecruitment from "./components/AIRecruitment";
+import AIAdvisory from "./components/AIAdvisory";
+import ScrollToTop from "./components/ScrollToTop";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
+        <ScrollToTop />
         <Header />
         <main>
           <Routes>
@@ -33,10 +36,11 @@ function App() {
               }
             />
             <Route path="/solutions" element={<Solutions />} />
+            <Route path="/ai-advisory" element={<AIAdvisory />} />
+            <Route path="/ai-recruitment" element={<AIRecruitment />} />
             <Route path="/education" element={<Education />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/ai-recruitment" element={<AIRecruitment />} />
           </Routes>
         </main>
         <Footer />

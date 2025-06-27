@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./ServicesProducts.css";
 
 const ServicesProducts: React.FC = () => {
@@ -21,6 +22,9 @@ const ServicesProducts: React.FC = () => {
               <li>Custom AI solution development</li>
               <li>Implementation support and training</li>
             </ul>
+            <Link to="/ai-advisory" className="service-link">
+              Learn More About AI Advisory →
+            </Link>
           </div>
           <div className="service-image">
             <div className="placeholder-image">AI Advisory</div>
@@ -41,6 +45,9 @@ const ServicesProducts: React.FC = () => {
               <li>Streamlined interview process</li>
               <li>Analytics and insights</li>
             </ul>
+            <Link to="/ai-recruitment" className="service-link">
+              Learn More About AI Recruitment →
+            </Link>
           </div>
           <div className="service-image">
             <div className="placeholder-image">AI Recruitment</div>

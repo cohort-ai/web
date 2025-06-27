@@ -3,5 +3,5 @@
 }
 
 main {
-  padding-top: 80px; /* Account for fixed header height */
+  /* Removed padding-top - hero will handle its own positioning */
 }

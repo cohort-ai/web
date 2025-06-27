@@ -2,15 +2,24 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 import logo from "../assets/logo_transparent.png";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaChevronDown } from "react-icons/fa";
 
 const Header: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [solutionsDropdownOpen, setSolutionsDropdownOpen] = useState(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const handleMenuToggle = () => setMenuOpen((open) => !open);
   const handleLinkClick = () => setMenuOpen(false);
+
+  const toggleSolutionsDropdown = () => {
+    setSolutionsDropdownOpen(!solutionsDropdownOpen);
+  };
+
+  const closeSolutionsDropdown = () => {
+    setSolutionsDropdownOpen(false);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,7 +47,9 @@ const Header: React.FC = () => {
   return (
     <header className={`header ${isVisible ? "visible" : "hidden"}`}>
       <div className="logo">
-        <img src={logo} alt="Cohort AI Logo" style={{ height: "44px" }} />
+        <Link to="/" onClick={handleLinkClick}>
+          <img src={logo} alt="Cohort AI Logo" style={{ height: "44px" }} />
+        </Link>
       </div>
       <nav
         className={`navigation${menuOpen ? " open" : ""}`}
@@ -56,9 +67,26 @@ const Header: React.FC = () => {
           <Link to="/" onClick={handleLinkClick}>
             Home
           </Link>
-          <Link to="/solutions" onClick={handleLinkClick}>
-            Solutions
-          </Link>
+          <div className="dropdown-container">
+            <button
+              className="dropdown-toggle"
+              onClick={toggleSolutionsDropdown}
+              onMouseEnter={() => setSolutionsDropdownOpen(true)}
+            >
+              Solutions <FaChevronDown size={12} />
+            </button>
+            <div
+              className={`dropdown-menu ${solutionsDropdownOpen ? "open" : ""}`}
+              onMouseLeave={closeSolutionsDropdown}
+            >
+              <Link to="/ai-advisory" onClick={handleLinkClick}>
+                AI Advisory
+              </Link>
+              <Link to="/ai-recruitment" onClick={handleLinkClick}>
+                AI Recruitment
+              </Link>
+            </div>
+          </div>
           <Link to="/education" onClick={handleLinkClick}>
             Education
           </Link>
